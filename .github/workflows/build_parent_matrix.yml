@@ -18,10 +18,8 @@ jobs:
       matrix:
         from_image: ["ghcr.io/aristanetworks/avd/universal"]
         from_variant: ["python3.12-avd-v6.1.0"]
-        user_id: ["1000", "1009"]
+        user_id: ["1009"]
         include:
-          - user_id: "1000"
-            group_id: "1000"
           - user_id: "1009"
             group_id: "1009"
     with:
